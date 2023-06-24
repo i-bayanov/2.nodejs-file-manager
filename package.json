@@ -1,0 +1,21 @@
+{
+  "name": "2.nodejs-file-manager",
+  "version": "1.0.0",
+  "description": "NodeJS CLI File Manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/i-bayanov/2.nodejs-file-manager.git"
+  },
+  "author": "Ilia Bayanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/i-bayanov/2.nodejs-file-manager/issues"
+  },
+  "homepage": "https://github.com/i-bayanov/2.nodejs-file-manager#readme",
+  "type": "module"
+}
