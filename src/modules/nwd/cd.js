@@ -1,8 +1,13 @@
+import { platform } from 'os';
 import fsPromises from 'fs/promises';
 import path from 'path';
 
 export async function cd(pathToDirectory) {
   if (!pathToDirectory) throw new Error('Invalid input');
+
+  if (pathToDirectory.endsWith(':') && platform() === 'win32') {
+    pathToDirectory += '\\';
+  }
 
   const newPath = path.resolve(this.cwd, pathToDirectory);
 
